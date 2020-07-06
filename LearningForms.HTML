@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en us">
+
+<Head>
+    <title>Learning Forms</title>
+    <link rel="stylesheet" type ="text/css" href="">
+</Head>
+
+
+<body>
+<Header>Please Enter Your Information</Header>
+
+<form action="" target="_self" method="post">
+    <fieldset>
+        <legend>Personalia:</legend>
+
+
+    <Label for="fname">First Name:</Label>
+    <input type="text" id="fname" name="fname"><br>
+
+    <input type="radio" id="Yes" name="YN" Value="Yes">
+    <label for="yes">Yes</label><br>
+    <input type="radio" id="No" name="YN" Value="No">
+    <label for="No">No</label><br>
+
+    <select id="random numbers" name="rn" size="4" multiple>
+        <option value="12">12</option>
+        <option value="58" selected>58</option>
+        <option value="16">16</option>
+        <option value="84" selected>84</option>
+    </select><br>
+
+    <textarea name="message" rows="15" cols="45">
+        This is where text goes.  
+    </textarea><br>
+
+    <input list="browsers">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist><BR>
+
+    <button type="button" onclick="alert('You clicked it!')">DON'T CLICK HERE</button>
+
+    <input type="submit" value="Send It">
+
+   
+      </fieldset>
+
+</form>
+
+
+<form
+    oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    0
+    <input type="range"  id="a" name="a" value="50">
+    100 +
+    <input type="number" id="b" name="b" value="50">
+    =
+    <output name="x" for="a b"></output>
+    <br><br>
+    <input type="submit">
+</form>
+
+
+</body>
+
+
+
+</html>
